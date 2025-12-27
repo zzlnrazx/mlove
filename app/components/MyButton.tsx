@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 export default function MyButton() {
   const [msg, setMsg] = useState('Is it your birthday?')
   const [yesScale, setYesScale] = useState(1)
-  const areys = ["are you sure?", "today isn't your bairthday?", "i dont think so", "really sure?", "are you really really sure?"]
+  const areys = [ "today isn't your bairthday?", "i think today is ur bairthday", "really sure?", "i know today is ur birthday" ]
   const [remaining, setRemaining] = useState([...areys])
   const router = useRouter()
 
