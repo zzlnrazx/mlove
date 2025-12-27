@@ -11,7 +11,7 @@ export default function MyButton() {
 
   return (
     <div className="flex flex-col items-center gap-6 px-4 ">
-      <p id="text" className="text-center relative xl:text-8xl   lg:text-9xl">{msg}</p>
+      <p id="text" className="text-center relative xl:text-8xl   lg:text-9xl sm:text-5xl">{msg}</p>
 
       <div className="">
         <button
@@ -19,7 +19,7 @@ export default function MyButton() {
           onClick={() => { setMsg(''); router.push('/how'); setYesScale(1) }}
 
           className={
-            `h-15 w-40 m-1 rounded-3xl bg-fuchsia-500 overflow-hidden transform transition-transform duration-200 ease-in-out my-10  xl:h-20 text-5xl xl:w-50 m-1 max-sm:w-30 mx-2          max-md:w-50    `
+            `h-15 w-40 m-1 rounded-3xl bg-fuchsia-500 overflow-hidden transform transition-transform duration-200 ease-in-out my-10  xl:h-20 text-5xl xl:w-50 m-1 max-sm:w-25 mx-1          max-md:w-50    `
           }
           style={{ transform: `scale(${yesScale})` }} 
         >
@@ -39,7 +39,7 @@ export default function MyButton() {
             })
             setYesScale(s => s + 0.9)
           }}
-          className="h-15 w-40 m-1 rounded-3xl bg-fuchsia-500 overflow-hidden transform transition-transform duration-200 ease-in-out my-1  xl:h-20  text-5xl xl:w-50 m-1 max-sm:w-30 mx-2        max-md:w-50"
+          className="h-15 w-40 m-1 rounded-3xl bg-fuchsia-500 overflow-hidden transform transition-transform duration-200 ease-in-out my-1  xl:h-20  text-5xl xl:w-50 m-1 max-sm:w-25 mx-1 text-2xl      max-md:w-50"
         >
           NO
         </button>
